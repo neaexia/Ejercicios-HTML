@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <form action="formulario">
+        <fieldset>
+            <legend>Rellenar</legend>
+            <!--Formulario de idiomas-->
+            <input type="radio" id="Inglés" name="idioma" value="idiomainglés">
+            <label for="Inglés">Inglés</label><br>
+            <input type="radio" id="Alemán" name="idioma" value="idiomaalemán">
+            <label for="Alemán">Alemán</label><br>
+            <input type="radio" id="Francés" name="idioma" value="idiomafrancés">
+            <label for="Francés">Francés</label><BR></BR>
+
+            <!--Formulario de conectores-->
+            <label for="conectores">Selecciona un conector:</label><BR></BR>
+            <select id="conectores" name="conectores">
+                <option value="usb">USB</option>
+                <option value="paralelo">Paralelo</option>
+                <option value="ps2">PS2</option>
+            </select><br><br>
+
+            <!--Formulario de Nombres y apellidos-->
+            <label for="Nombre">Nombre: </label>
+            <input type="text"><br>
+            <label for="Apellido">Apellidos:</label>
+            <input type="text"><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Indique sus preferencias, por favor</legend>
+            <!--Formulario de género-->
+            <select name="sexo" size="2">
+                <option value="mujer">Mujer</option>
+                <option value="hombre">Hombre</option>
+            </select><br><br>
+
+            <!--Formulario de género 2-->
+            <input type="checkbox" name="sexo" value="sexomujer">
+            <label for="sexomujer">Mujer</label><br>
+            <input type="checkbox" name="sexo" value="sexohombre">
+            <label for="sexohombre">Hombre</label><br><br>
+
+            <!--Formulario de fecha-->
+            <label for="fecha">Elija una fecha:</label>
+            <input type="date">
+        </fieldset>
+    </form>
+</body>
+
+</html>
